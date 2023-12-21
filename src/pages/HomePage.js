@@ -3,6 +3,6 @@ import React from "react";
 
 export const HomePage = () => {
     return (
-        <h2>Template in Progress</h2>
+        <h2>HomePage in Progress</h2>
     );
 }
