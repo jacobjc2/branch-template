@@ -9,11 +9,13 @@ import { IndustriesPage } from './pages/industries/IndustriesPage';
 import { ManufacturersPage } from './pages/manufacturers/ManufacturersPage';
 import { ProductsPage } from './pages/products/ProductsPage';
 import { ServicesPage } from './pages/services/ServicesPage';
+import { Header } from './components/Header';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Header />
         <Navigation />
           <Routes>
             <Route index element={<HomePage/>}/>

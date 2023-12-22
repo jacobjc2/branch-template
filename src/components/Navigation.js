@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -6,8 +6,22 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Weimer from '../assets/Weimer.png';
 
 export const Navigation = () => {
-    
-    const [nav, setNav] = useState(false);
+
+  const [navImage, setnavImage] = useState(false)
+  const navRef = useRef()
+  navRef.current = navImage
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 200
+      if (navRef.current !== show) {
+        setnavImage(show)
+      }
+    }
+    document.addEventListener('scroll', handleScroll)
+    return () => {
+      document.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
     // State management to show or hide product dropdown
     const [showProd, setProdShow] = useState(false);
@@ -60,10 +74,11 @@ export const Navigation = () => {
           <Navbar.Brand href="/">
           <img
               src={Weimer}
-              width="168"
-              height="60"
-              className="d-inline-block align-top"
+              width="129"
+              height="46"
+              // className="d-inline-block align-top"
               alt="NIS Logo"
+              style={{ display: navImage?'inline':'none'}}
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
