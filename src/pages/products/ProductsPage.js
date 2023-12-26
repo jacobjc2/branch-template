@@ -8,13 +8,16 @@ import BearingsProduct from '../../assets/ProductCategories/BearingsProduct.png'
 export const ProductsPage = () => {
     return (
         <Container fluid>
-            <Row className="bg-light">
-                <Row className="mt-5 justify-content-center">
-                    <h3>Products</h3>
+            <Row className="">
+                <Row className="mt-5 mb-5 justify-content-center">
+                    <h2 className="text-danger">Products</h2>
+                    <div>
+                        <hr className=" m-auto mt-2 mb-2 w-50"></hr>
+                    </div>
                     <p className="w-50">Weimer Bearing & Transmission offers a wide range of products for a variety of industries. Weimer consistently adds new and innovative products, in order to maintain it's position as a leading distributor of mechanical, electrical, hydraulic and pneumatic components. Contact Weimer today to learn more about their expanding product offering.<br/></p>
                 </Row>
             </Row>
-            <Row className="justify-content-center">
+            <Row className="justify-content-center bg-light">
                 <Row className="mt-3 w-50 justify-content-between" >
                     <Card className="mb-2" style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={BearingsProduct} />
