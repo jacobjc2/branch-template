@@ -6,7 +6,7 @@ export const Footer = () => {
         <footer className="page-footer font-small blue pt-4">
             <div className="container-fluid text-center text-md-left">
                 <div className="row">
-                    <div className="col-md-6 mt-md-0 mt-3 pl-4 align text-start">
+                    <div className="col-md-6 mt-md-0 mt-3 align text-start">
                         <span class="fw-bold">WEIMER BEARING AND TRANSMISSION<br/></span>
                         <span>N112 W13131 Mequon Rd.<br/></span>
                         <span>Germantown, WI 53022<br/><br/></span>
