@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Card from 'react-bootstrap/Card';
 
 
 export const ContactPage = () => {

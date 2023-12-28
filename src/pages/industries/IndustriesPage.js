@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 import BearingsProduct from '../../assets/ProductCategories/BearingsProduct.png';
 
