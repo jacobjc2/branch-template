@@ -89,8 +89,8 @@ export const Navigation = () => {
                 onMouseEnter={showProducts} 
                 onMouseLeave={hideProducts}
                 onToggle={() => { window.location.href = '/products'}}>
-                <NavDropdown.Item href="/products/product1">Product Line 1</NavDropdown.Item>
-                <NavDropdown.Item href="/products/product2">Product Line 2</NavDropdown.Item>
+                <NavDropdown.Item href="/products/productone">Product Line 1</NavDropdown.Item>
+                <NavDropdown.Item href="/products/producttwo">Product Line 2</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Services" id="basic-nav-dropdown" className="ms-5"
                 show={showServ}

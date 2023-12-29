@@ -22,7 +22,7 @@ export const ProductsPage = () => {
                     <Card className="mb-2" style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={BearingsProduct} />
                         <Card.Body>
-                            <Card.Title><a href="/">Bearings</a></Card.Title>
+                            <Card.Title><a href="/products/productone">Bearings</a></Card.Title>
                             <Card.Text className="text-start" >
                             Weimer offers a wide variety of plain, naked, housed and linear bearings for any industrial application
                             </Card.Text>
@@ -31,7 +31,7 @@ export const ProductsPage = () => {
                     <Card className="mb-2" style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={BearingsProduct} />
                         <Card.Body>
-                            <Card.Title><a href="/">Electronic Motion Control</a></Card.Title>
+                            <Card.Title><a href="/products/producttwo">Electronic Motion Control</a></Card.Title>
                             <Card.Text className="text-start" >
                             Weimer has a complete offering of electrical components, including motors, brakes, inverters, controls and sensors
                             </Card.Text>
