@@ -21,7 +21,7 @@ export const ServicesPage = () => {
                     <Card className="mb-2" style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={BearingsProduct} />
                         <Card.Body>
-                            <Card.Title><a href="/">Custom Repair</a></Card.Title>
+                            <Card.Title><a href="services/serviceone">Custom Repair</a></Card.Title>
                             <Card.Text className="text-start" >
                             Weimer Bearing offers a number of custom repair services, including way cover, ball screw, gearbox, slide, spindle and electrical components
                             </Card.Text>

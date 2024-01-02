@@ -69,7 +69,7 @@ export const Navigation = () => {
     }
 
     return (
-      <Navbar expand="lg" sticky="top" className="bg-body-tertiary">
+      <Navbar expand="lg" sticky="top" className="bg-body-tertiary border-bottom border-top border-2 border-dark">
         <Container>
           <Navbar.Brand href="/">
           <img
@@ -97,7 +97,7 @@ export const Navigation = () => {
                 onMouseEnter={showServices} 
                 onMouseLeave={hideServices}
                 onToggle={() => { window.location.href = '/services'}}>
-                <NavDropdown.Item href="/services/service1">Service 1</NavDropdown.Item>
+                <NavDropdown.Item href="/services/serviceone">Service 1</NavDropdown.Item>
                 <NavDropdown.Item href="/services/service2">Service 2</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Industries" id="basic-nav-dropdown" className="ms-5"

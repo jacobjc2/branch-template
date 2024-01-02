@@ -10,6 +10,7 @@ import { ManufacturersPage } from './pages/manufacturers/ManufacturersPage';
 import { ProductsPage } from './pages/products/ProductsPage';
 import { ProductOnePage } from './pages/products/ProductLine/ProductOnePage';
 import { ProductTwoPage } from './pages/products/ProductLine/ProductTwoPage';
+import { ServiceOnePage } from './pages/services/ServiceLine/ServiceOnePage';
 import { ServicesPage } from './pages/services/ServicesPage';
 import { Header } from './components/Header';
 
@@ -25,6 +26,7 @@ function App() {
             <Route path='products/productone' element={<ProductOnePage/>}/>
             <Route path='products/producttwo' element={<ProductTwoPage/>}/>
             <Route path='services' element={<ServicesPage/>}/>
+            <Route path='services/serviceone' element={<ServiceOnePage/>}/>
             <Route path='industries' element={<IndustriesPage/>}/>
             <Route path='manufacturers' element={<ManufacturersPage/>}/>
             <Route path='contact' element={<ContactPage/>}/>
