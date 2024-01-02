@@ -7,7 +7,7 @@ export const ServiceOnePage = () => {
         <Container fluid>
             <Row className="">
                 <Row className="mt-5 mb-5 justify-content-center">
-                    <h2 className="text-danger">Service One</h2>
+                    <h2 className="text-dark">Service One</h2>
                     <div>
                         <hr className=" m-auto mt-2 mb-2 w-50"></hr>
                     </div>
@@ -27,7 +27,7 @@ export const ServiceOnePage = () => {
                         <p className="mb-5 text-center">
                         Complete repair or replacement<br/>Reverse engineered OEM covers<br/>Full dent removal, box and wiper replacement, and cycle testing<br/>Special 24-hour delivery services available</p>
                         <div>
-                            <hr class="m-auto border-danger" style={{ width: 100 }} />
+                            <hr class="m-auto" style={{ width: 100 }} />
                         </div>
                     </Col>
                     <Col>
@@ -48,7 +48,7 @@ export const ServiceOnePage = () => {
                         <p className="mb-5 text-center">
                         Complete repair or replacement<br/>Reverse engineered OEM covers<br/>Full dent removal, box and wiper replacement, and cycle testing<br/>Special 24-hour delivery services available</p>
                         <div>
-                            <hr class="m-auto border-danger" style={{ width: 100 }} />
+                            <hr class="m-auto" style={{ width: 100 }} />
                         </div>
                     </Col>
                     <Col>
@@ -69,7 +69,7 @@ export const ServiceOnePage = () => {
                         <p className="mb-5 text-center">
                         Complete repair or replacement<br/>Reverse engineered OEM covers<br/>Full dent removal, box and wiper replacement, and cycle testing<br/>Special 24-hour delivery services available</p>
                         <div>
-                            <hr class="m-auto border-danger" style={{ width: 100 }} />
+                            <hr class="m-auto" style={{ width: 100 }} />
                         </div>
                     </Col>
                     <Col>
