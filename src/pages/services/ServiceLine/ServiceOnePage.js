@@ -14,7 +14,6 @@ export const ServiceOnePage = () => {
                     <p className="w-50">Weimer Bearing offers a number of custom repair services, including way cover, ball screw, gearbox, slide, spindle and electrical components. Custom product repairs can save you money and costly downtime. Contact Weimer today for all your custom repair needs.<br/></p>
                 </Row>
             </Row>
-
             <Row className="mt-3 justify-content-center">
                 <Row className="w-75">
                     <Col>
@@ -26,16 +25,12 @@ export const ServiceOnePage = () => {
                         </h2>
                         <p className="mb-5 text-center">
                         Complete repair or replacement<br/>Reverse engineered OEM covers<br/>Full dent removal, box and wiper replacement, and cycle testing<br/>Special 24-hour delivery services available</p>
-                        <div>
-                            <hr class="m-auto" style={{ width: 100 }} />
-                        </div>
                     </Col>
                     <Col>
                         <img alt="Testing Image"></img>
                     </Col>
                 </Row>
             </Row>
-
             <Row className="mt-3 justify-content-center">
                 <Row className="w-75">
                     <Col>
@@ -47,17 +42,13 @@ export const ServiceOnePage = () => {
                         </h2>
                         <p className="mb-5 text-center">
                         Complete repair or replacement<br/>Reverse engineered OEM covers<br/>Full dent removal, box and wiper replacement, and cycle testing<br/>Special 24-hour delivery services available</p>
-                        <div>
-                            <hr class="m-auto" style={{ width: 100 }} />
-                        </div>
                     </Col>
                     <Col>
                         <img alt="Testing Image"></img>
                     </Col>
                 </Row>
             </Row>
-
-            <Row className="mt-5 mb-5 justify-content-center">
+            <Row className="mt-5 mb-3 justify-content-center">
                 <Row className="w-75">
                     <Col>
                         <img alt="Testing Image"></img>
@@ -68,16 +59,38 @@ export const ServiceOnePage = () => {
                         </h2>
                         <p className="mb-5 text-center">
                         Complete repair or replacement<br/>Reverse engineered OEM covers<br/>Full dent removal, box and wiper replacement, and cycle testing<br/>Special 24-hour delivery services available</p>
-                        <div>
-                            <hr class="m-auto" style={{ width: 100 }} />
-                        </div>
                     </Col>
                     <Col>
                         <img alt="Testing Image"></img>
                     </Col>
                 </Row>
+                <Row>
+                    <div>
+                        <hr class="m-auto w-75" />
+                    </div>
+                </Row>
             </Row>
-
+            <Row className="mb-5 justify-content-center">
+                <Row>
+                    <h2>
+                        Component 1, 2 & 3 Repair
+                    </h2>
+                </Row>
+                <Row className="w-75">
+                    <Col>
+                        <img alt="Testing Image"></img>
+                        <h4>Component 1</h4>
+                    </Col>
+                    <Col>
+                        <img alt="Testing Image"></img>
+                        <h4>Component 2</h4>
+                    </Col>
+                    <Col>
+                        <img alt="Testing Image"></img>
+                        <h4>Component 1</h4>
+                    </Col>
+                </Row>
+            </Row>
             <Row className="bg-light">
                 <Row className="mt-5 justify-content-center">
                     <h3>Ready for a Quote? Call Us</h3>
