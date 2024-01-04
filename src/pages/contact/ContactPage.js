@@ -17,27 +17,27 @@ export const ContactPage = () => {
             <Row className="w-75 m-auto">
                 <Col sm={6}>
                     <form className="text-start w-75">
-                        <div class="mb-3">
-                            <label for="exampleInputName1" class="form-label">Name*:</label>
-                            <input type="email" class="form-control" id="exampleInputName1" aria-describedby="emailHelp"/>
+                        <div className="mb-3">
+                            <label for="exampleInputName1" className="form-label">Name*:</label>
+                            <input type="email" className="form-control" id="exampleInputName1" aria-describedby="emailHelp"/>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputCompany1" class="form-label">Company*:</label>
-                            <input type="company" class="form-control" id="exampleInputCompany1"/>
+                        <div className="mb-3">
+                            <label for="exampleInputCompany1" className="form-label">Company*:</label>
+                            <input type="company" className="form-control" id="exampleInputCompany1"/>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email Address*:</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                        <div className="mb-3">
+                            <label for="exampleInputEmail1" className="form-label">Email Address*:</label>
+                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPhone1" class="form-label">Phone:</label>
-                            <input type="phone" class="form-control" id="exampleInputPhone1"/>
+                        <div className="mb-3">
+                            <label for="exampleInputPhone1" className="form-label">Phone:</label>
+                            <input type="phone" className="form-control" id="exampleInputPhone1"/>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputMessage1" class="form-label">Message:</label>
-                            <textarea type="message" class="form-control" id="exampleInputMessage1"/>
+                        <div className="mb-3">
+                            <label for="exampleInputMessage1" className="form-label">Message:</label>
+                            <textarea type="message" className="form-control" id="exampleInputMessage1"/>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" className="btn btn-primary">Submit</button>
                     </form>
                 </Col>
                 <Col>

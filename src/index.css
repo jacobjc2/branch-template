@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.alpha-nav {
+  font-weight: 700;
+  padding-left: 1rem;
+}
+
+.alpha-nav a {
+  padding-left: 5px;
+  color: #b90000;
+  text-decoration: none;
+}
+
+.mfg-alpha-list {
+  column-count: 5;
+  column-gap: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+  .mfg-alpha-list {
+    column-count: 4;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mfg-alpha-list {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mfg-alpha-list {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mfg-alpha-list {
+    column-count: 1;
+  }
+}
+

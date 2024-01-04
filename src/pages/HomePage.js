@@ -65,7 +65,7 @@ export const HomePage = () => {
                         Weimer Bearing & Transmission offers a wide range of products for a variety of industries. Weimer consistently adds new and innovative products, in order to maintain it's position as a leading distributor of mechanical, electrical and pneumatic components. Contact Weimer today to learn more about their expanding product offering.
                         </p>
                         <div>
-                            <hr class="m-auto border-danger" style={{ width: 100 }} />
+                            <hr className="m-auto border-danger" style={{ width: 100 }} />
                         </div>
                         <img className="mt-5" src={OPTN}></img>
                     </Col>
@@ -82,7 +82,7 @@ export const HomePage = () => {
                         Weimer Bearing & Transmission offers a variety of customized industrial services and innovative solutions to help save OEM and MRO customers both time and money. These custom tailored industrial services help add value and allow for single sourcing.
                         </p>
                         <div>
-                            <hr class="m-auto border-danger" style={{ width: 100 }} />
+                            <hr className="m-auto border-danger" style={{ width: 100 }} />
                         </div>
                     </Col>
                     <Col xs={8}>
@@ -103,7 +103,7 @@ export const HomePage = () => {
                         <p className="mb-5 text-start">
                         Weimer Bearing services a number of industries, offering world-class motion control products that keep your applications running smoothly. Weimer continuously adds new and innovative products to their offering in order to remain at the forefront of emerging technologies.                        </p>
                         <div>
-                            <hr class="m-auto border-danger" style={{ width: 100 }} />
+                            <hr className="m-auto border-danger" style={{ width: 100 }} />
                         </div>
                     </Col>
                     <Col>
