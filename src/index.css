@@ -28,6 +28,11 @@ code {
   column-gap: 2px;
 }
 
+.prod-alpha-list {
+  column-count: 2;
+  column-gap: 2px;
+}
+
 @media screen and (max-width: 1000px) {
   .mfg-alpha-list {
     column-count: 4;
@@ -43,6 +48,10 @@ code {
 @media screen and (max-width: 600px) {
   .mfg-alpha-list {
     column-count: 2;
+  }
+  .prod-alpha-list {
+    column-count: 1;
+    column-gap: 2px;
   }
 }
 

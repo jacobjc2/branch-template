@@ -1,11 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button } from "react-bootstrap";
-import AlphabetList from 'react-alphabet-list';
 import { AlphaList } from '../../components/AlphaList';
-
+import Select from 'react-select';
 
 export const ManufacturersPage = () => {
+    const options = [
+      { value: "all", label: "All" },
+      { value: "prod_bearings", label: "Bearings" },
+      { value: "prod_electrical", label: "Electrical" },
+    ];
+
     const [data, setData] = useState(null);
+    const [selected, setSelected] = useState(null);
+
+    const handleChange = (selectedOption) => {
+      setSelected(selectedOption);
+      console.log(`Option selected:`, selectedOption);
+      if(selectedOption.value == "all")
+      {
+        fetch('http://localhost:5000/test?branch=Template')
+        .then(response => response.json())
+        .then(json => setData(json))
+        .catch(error => console.error(error));
+      }
+      else
+      {
+        fetch('http://localhost:5000/test?prod=' + selectedOption.value + '&branch=Template')
+        .then(response => response.json())
+        .then(json => setData(json))
+        .catch(error => console.error(error));
+      } 
+    };
 
     useEffect(() => {
       fetch('http://localhost:5000/test?branch=Template')
@@ -13,21 +38,6 @@ export const ManufacturersPage = () => {
         .then(json => setData(json))
         .catch(error => console.error(error));
     }, []);
-
-    // const onChange = (event) => {
-    //   if(event.target.value = "") {
-    //     fetch('http://localhost:5000/test?branch=Template')
-    //     .then(response => response.json())
-    //     .then(json => setData(json))
-    //     .catch(error => console.error(error));
-    //   }
-    //   else {
-    //     fetch('http://localhost:5000/test?prod=' + event.target.value + 'branch=Template')
-    //     .then(response => response.json())
-    //     .then(json => setData(json))
-    //     .catch(error => console.error(error));
-    //   }
-    // };
 
     return (
       <Container fluid>
@@ -47,11 +57,7 @@ export const ManufacturersPage = () => {
           <Row className="w-50 text-start">
             <span>Manufacturers by Product:</span>
             <hr className="mb-1 m-auto"></hr>
-            <select className="mb-3">
-              <option value="">All</option>
-              <option value="prod_bearings">Bearings</option>
-              <option value="prod_electrical">Electrical</option>
-            </select>
+            <Select options={options} onChange={handleChange}/>
           </Row>
           
           <Row className="mb-2 mt-2 w-75 justify-content-center">
@@ -69,9 +75,4 @@ export const ManufacturersPage = () => {
         </Row>
       </Container>
     );
-    // <ul className="text-start">
-    //         {data.map(({name}) => (
-    //           <li>{name}</li>
-    //         ))}
-    //         </ul>
 }
