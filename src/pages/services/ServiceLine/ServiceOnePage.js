@@ -66,7 +66,7 @@ export const ServiceOnePage = () => {
                 </Row>
                 <Row>
                     <div>
-                        <hr class="m-auto w-75" />
+                        <hr className="m-auto w-75" />
                     </div>
                 </Row>
             </Row>
