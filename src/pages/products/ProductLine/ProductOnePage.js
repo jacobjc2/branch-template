@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row } from "react-bootstrap";
-
+import { Container, Row, Col } from "react-bootstrap";
+import { AlphaList } from '../../../components/AlphaList';
 
 export const ProductOnePage = () => {
     const [data, setData] = useState(null);
@@ -24,13 +24,19 @@ export const ProductOnePage = () => {
             </Row>
         </Row>
         <Row className="justify-content-center">
-          <Row className="w-75 justify-content-start">
-            {data ? <ul className="text-start">
-            {data.map(({name}) => (
-              <li>{name}</li>
-            ))}
-            </ul> : 'Loading...'}
-          </Row>
+          <Col>
+          </Col>
+          <Col>
+            <Row className="mb-2 mt-2 w-75 justify-content-center">
+              <div className="text-start">
+                <h2>Product One Manufacturers</h2>
+              </div>
+              
+              {data ?  
+              <AlphaList data={data} alphaClass="prod-alpha-list"></AlphaList>
+              : 'Loading...'}
+            </Row>
+          </Col>
         </Row>
         
       </Container>

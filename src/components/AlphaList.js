@@ -21,11 +21,11 @@ export const AlphaList = ({ data, alphaClass }) => {
                 <a href={'#' + key}>{key}</a>
                 ))}
             </div>
-            <div className={alphaClass}>
+            <div className={alphaClass + " text-start"}>
                 {parsedData.map(([key, value]) => (
                     <div id={key}  key={key}>
-                        <strong>{key}</strong>
-                        <div>
+                        <strong style= {{color: "#b90000"}}>{key}</strong>
+                        <div >
                         {value.map(v => (
                             <p key={v}>{v}</p>
                         ))}
