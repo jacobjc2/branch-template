@@ -7,7 +7,7 @@ export const ContactPage = () => {
         <Container fluid>
             <Row>
                 <Row className="mt-5 mb-5 justify-content-center">
-                    <h2 className="text-danger">Contact Us</h2>
+                    <h2 className="page-head">Contact Us</h2>
                     <div>
                         <hr className=" m-auto mt-2 mb-2 w-50"></hr>
                     </div>

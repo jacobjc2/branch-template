@@ -10,7 +10,6 @@ export const Header = () => {
         <div>
             <a href="/">
                 <img style={{ maxWidth: "100%" }} src={header_image}>
-                    
                 </img>
             </a>
         </div>

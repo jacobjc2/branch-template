@@ -69,14 +69,13 @@ export const Navigation = () => {
     }
 
     return (
-      <Navbar expand="lg" sticky="top" className="bg-body-tertiary border-bottom border-top border-2 border-dark">
+      <Navbar expand="lg" sticky="top" className="bg-body-tertiary border-bottom border-2">
         <Container>
           <Navbar.Brand href="/">
           <img
               src={Weimer}
-              width="129"
-              height="46"
-              // className="d-inline-block align-top"
+              width="113"
+              height="40"
               alt="NIS Logo"
               style={{ display: navImage?'inline':'none'}}
             />
@@ -111,10 +110,12 @@ export const Navigation = () => {
               <Nav.Link href="/manufacturers"  className="ms-5">Manufacturers</Nav.Link>
               <NavDropdown title="About" id="basic-nav-dropdown" className="ms-5"
                 show={showAb}
-                onMouseEnter={showAbout} 
+                onMouseEnter={showAbout}
                 onMouseLeave={hideAbout}
                 onToggle={() => { window.location.href = '/about'}}>
                 <NavDropdown.Item href="/about/history">History</NavDropdown.Item>
+                <NavDropdown.Item href="/about/news">News</NavDropdown.Item>
+                <NavDropdown.Item href="/about/resources">Resources</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Contact" id="basic-nav-dropdown" className="ms-5"
                 show={showCon}

@@ -12,6 +12,24 @@ code {
     monospace;
 }
 
+/* Footer Styling */
+.footer-link {
+  color: #b90000;
+  text-decoration: none;
+}
+
+/* Page Header Styling */
+.page-head {
+  color: #b90000;
+}
+
+/* Card Styling */
+.card-head {
+  color: #b90000;
+  text-decoration: none;
+}
+
+/* Alphabetical List Styles*/
 .alpha-nav {
   font-weight: 700;
   padding-left: 1rem;

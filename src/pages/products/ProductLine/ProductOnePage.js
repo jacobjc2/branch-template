@@ -4,11 +4,17 @@ import { AlphaList } from '../../../components/AlphaList';
 
 export const ProductOnePage = () => {
     const [data, setData] = useState(null);
+    const [products, setProducts] = useState(null);
 
     useEffect(() => {
       fetch('http://localhost:5000/test?prod=prod_bearings&branch=Template')
         .then(response => response.json())
         .then(json => setData(json))
+        .catch(error => console.error(error));
+      fetch('http://localhost:5000/bearings')
+        .then(response => response.json())
+        .then(json => setProducts(json))
+        .then(products => console.log(products))
         .catch(error => console.error(error));
     }, []);
 
@@ -16,7 +22,7 @@ export const ProductOnePage = () => {
       <Container fluid>
         <Row className="">
             <Row className="mt-5 mb-5 justify-content-center">
-                <h2 className="text-danger">Product One</h2>
+                <h2>Product One</h2>
                 <div>
                     <hr className=" m-auto mt-2 mb-2 w-50"></hr>
                 </div>
@@ -25,6 +31,16 @@ export const ProductOnePage = () => {
         </Row>
         <Row className="justify-content-center">
           <Col>
+            {/* {products.map(({prod_name, prod_desc}) => (
+                <div key={prod_name}>
+                  <p>
+                  {prod_name}
+                  </p>
+                  <p>
+                  {prod_desc}
+                  </p>
+                </div>
+              ))} */}
           </Col>
           <Col>
             <Row className="mb-2 mt-2 w-75 justify-content-center">

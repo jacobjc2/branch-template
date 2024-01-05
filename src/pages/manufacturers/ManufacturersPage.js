@@ -15,7 +15,6 @@ export const ManufacturersPage = () => {
 
     const handleChange = (selectedOption) => {
       setSelected(selectedOption);
-      console.log(`Option selected:`, selectedOption);
       if(selectedOption.value == "all")
       {
         fetch('http://localhost:5000/test?branch=Template')
@@ -43,7 +42,7 @@ export const ManufacturersPage = () => {
       <Container fluid>
         <Row className="">
             <Row className="mt-5 justify-content-center">
-                <h2 className="text-danger">Manufacturers</h2>
+                <h2 className="page-head">Manufacturers</h2>
                 <div>
                     <hr className=" m-auto mt-2 mb-2 w-50"></hr>
                 </div>

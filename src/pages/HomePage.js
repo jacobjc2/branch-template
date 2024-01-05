@@ -58,7 +58,7 @@ export const HomePage = () => {
                         <img src={TBWoods}></img>
                     </Col>
                     <Col>
-                        <h1 className="pb-2 text-danger">
+                        <h1 className="pb-2 page-head">
                             Products
                         </h1>
                         <p className="mb-5 text-start">
@@ -75,7 +75,7 @@ export const HomePage = () => {
             <Row className="mt-3 justify-content-center">
                 <Row className="w-75">
                     <Col>
-                        <h1 className="pb-2 text-danger">
+                        <h1 className="pb-2 page-head">
                             Services
                         </h1>
                         <p className="mb-5 text-start">
@@ -97,7 +97,7 @@ export const HomePage = () => {
                         <img src={Aggregate}></img>
                     </Col>
                     <Col>
-                        <h1 className="pt-4 pb-2 text-danger">
+                        <h1 className="pt-4 pb-2 page-head">
                             Industries
                         </h1>
                         <p className="mb-5 text-start">
